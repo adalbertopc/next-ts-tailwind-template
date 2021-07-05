@@ -3,7 +3,13 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'google', 'prettier'],
+  extends: [
+    'next',
+    'next/core-web-vitals', 
+    'plugin:react/recommended',
+    'google',
+    'prettier'
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,7 +19,14 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
-  rules: { 'require-jsdoc': 0, 'react/react-in-jsx-scope': 'off' },
+  rules: {
+    "camelcase": "warn",
+    "semi": "error",
+    "eqeqeq": "warn",
+    "no-else-return": "warn",
+    'require-jsdoc': 0, 
+    'react/react-in-jsx-scope': 'off'
+  },
   settings: {
     react: {
       version: 'latest',
