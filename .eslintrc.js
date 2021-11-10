@@ -4,11 +4,12 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'next',
-    'next/core-web-vitals', 
+    'plugin:tailwindcss/recommended',
     'plugin:react/recommended',
     'google',
-    'prettier'
+    'prettier',
+    'next',
+    'next/core-web-vitals', 
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
